@@ -1,5 +1,11 @@
 module.exports = {
   extends: 'airbnb-base',
+  env: {
+    browser: true,
+    node: true,
+    mocha: true,
+    es6: true
+  },
   rules: {
     'comma-dangle': [
       2,
@@ -20,6 +26,11 @@ module.exports = {
     'arrow-body-style': [
       2,
       'as-needed'
+    ],
+    "import/no-extraneous-dependencies": [
+      "error", {
+        "devDependencies": true
+      }
     ],
   }
 }
