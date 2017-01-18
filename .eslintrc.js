@@ -23,13 +23,16 @@ module.exports = {
     'new-cap': 0,
     'semi': ['error', 'never'],
     'radix': ['error', 'as-needed'],
+    'no-underscore-dangle': ['error', { 'allow': [
+      '_getData', // used by node-mocks-http
+    ]}],
     'arrow-body-style': [
       2,
       'as-needed'
     ],
-    "import/no-extraneous-dependencies": [
-      "error", {
-        "devDependencies": true
+    'import/no-extraneous-dependencies': [
+      'error', {
+        'devDependencies': true
       }
     ],
   }
