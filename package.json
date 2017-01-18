@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "React Server-side rendering utilities",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyndiq/rendereact.git"
+  },
   "scripts": {
     "test": "mocha test && eslint ."
   },
