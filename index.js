@@ -1,6 +1,6 @@
 module.exports = {
-  APIMiddleware: ({ apps }) => {
-    return (req, res, next) => {
+  APIMiddleware: ({ apps }) => (
+    (req, res, next) => {
       const appName = req.body.app
       if (!(appName in apps)) {
         res.status(404).json({ error: `Unknown app : ${req.body.app}` })
@@ -16,5 +16,5 @@ module.exports = {
         })
       }
     }
-  },
+  ),
 }
